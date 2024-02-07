@@ -36,7 +36,7 @@ contract LendingPlatform {
         require(_loanAmount > 0, "Loan amount must be greater than 0");
         require(collateralBalances[msg.sender] >= _loanAmount, "Insufficient collateral");
 
-        // Transfer DAI tokens to the borrower
+
         require(daiToken.transferFrom(owner, msg.sender, _loanAmount), "Failed to transfer DAI");
 
         // Adjust collateral balance
