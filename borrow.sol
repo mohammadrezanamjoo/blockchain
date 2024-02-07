@@ -49,7 +49,6 @@ contract LendingPlatform {
         
         require(daiToken.transferFrom(msg.sender, owner, _repaymentAmount), "Failed to repay loan");
 
-        // Adjust collateral balance
         collateralBalances[msg.sender] += _repaymentAmount;
     }
 }
