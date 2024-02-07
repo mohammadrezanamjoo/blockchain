@@ -39,7 +39,6 @@ contract LendingPlatform {
 
         require(daiToken.transferFrom(owner, msg.sender, _loanAmount), "Failed to transfer DAI");
 
-        // Adjust collateral balance
         collateralBalances[msg.sender] -= _loanAmount;
 
         emit LoanGranted(msg.sender, _loanAmount);
