@@ -47,7 +47,6 @@ contract LendingPlatform {
     function repayLoan(uint256 _repaymentAmount) external {
         require(_repaymentAmount > 0, "Repayment amount must be greater than 0");
         
-        // Transfer DAI tokens from the borrower to the contract
         require(daiToken.transferFrom(msg.sender, owner, _repaymentAmount), "Failed to repay loan");
 
         // Adjust collateral balance
