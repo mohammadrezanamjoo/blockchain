@@ -42,7 +42,6 @@ contract LendingPlatform {
         // Adjust collateral balance
         collateralBalances[msg.sender] -= _loanAmount;
 
-        // Emit event
         emit LoanGranted(msg.sender, _loanAmount);
     }
 
