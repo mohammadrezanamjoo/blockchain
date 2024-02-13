@@ -28,7 +28,7 @@ contract IdentityManagement {
 
     function verifyIdentity(address _identity) external onlyOwner {
         require(identities[_identity].owner != address(0), "Identity does not exist");
-        require(msg.sender != _identity, "Cannot verify own identity");
+        require(msg.sender != _identity, " Cannot verify own identity ");
 
         identities[_identity].isVerified = true;
         emit IdentityVerified(_identity);
