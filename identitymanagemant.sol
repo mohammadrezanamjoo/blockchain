@@ -14,7 +14,7 @@ contract IdentityManagement {
     event IdentityVerified(address indexed owner);
 
     modifier onlyOwner() {
-        require(msg.sender == identities[msg.sender].owner, "Only the identity owner can call this function");
+        require(msg.sender == identities[msg.sender].owner, " Only the identity owner can call this function ");
         _;
     }
 
