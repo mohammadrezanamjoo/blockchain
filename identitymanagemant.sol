@@ -19,7 +19,7 @@ contract IdentityManagement {
     }
 
     function createIdentity(string memory _username) external {
-        require(bytes(_username).length > 0, "Username cannot be empty");
+        require(bytes(_username).length > 0,  "Username cannot be empty" );
         require(identities[msg.sender].owner == address(0), "Identity already exists");
 
         identities[msg.sender] = Identity(_username, msg.sender, false);
