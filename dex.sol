@@ -35,7 +35,7 @@ contract DecentralizedExchange {
         tokenBalances[msg.sender][_token] -= _amount;
     }
 
-    function executeTrade(address _token, address _seller, uint256 _amount) external {
+    function executeTrade(address ,  _token, address _seller, uint256 _amount) external {
         require(tokenBalances[_seller][_token] >= _amount, "Insufficient seller balance");
 
         // Transfer tokens from the buyer to the seller
