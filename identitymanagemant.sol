@@ -22,7 +22,7 @@ contract IdentityManagement {
         require(bytes(_username).length > 0,  " Username cannot be empty " );
         require(identities[msg.sender].owner == address(0), " Identity already exists ");
 
-        identities[msg.sender] = Identity(_username, msg.sender, false);
+        identities[msg.sender] = Identity(username, msg.sender, false);
         emit IdentityCreated(msg.sender, _username);
     }
 
