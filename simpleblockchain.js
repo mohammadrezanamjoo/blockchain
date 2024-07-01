@@ -58,7 +58,7 @@ class Blockchain {
     }
 }
 
-// Test the 
+// Test
 const { SHA256 } = require('crypto-js');
 global.CryptoJS = require('crypto-js');
 
