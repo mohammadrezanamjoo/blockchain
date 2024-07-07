@@ -66,7 +66,7 @@ console.log('Mining block 1...');
 savjeeCoin.addBlock(new Block(1,date.now(), { amount: 4 }));
 
 console.log('Mining block 2...');
-savjeeCoin.addBlock(new Block(2, "01/07/2023", { amount: 10 }));
+savjeeCoin.addBlock(new Block(2, date.now() , { amount: 10 }));
 
 console.log(JSON.stringify(savjeeCoin, null, 4));
 console.log('Blockchain valid? ' + savjeeCoin.isChainValid());
