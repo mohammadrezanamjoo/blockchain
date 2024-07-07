@@ -63,7 +63,7 @@ global.CryptoJS = require('crypto-js');
 
 let savjeeCoin = new Blockchain();
 console.log('Mining block 1...');
-savjeeCoin.addBlock(new Block(1, "01/06/2023", { amount: 4 }));
+savjeeCoin.addBlock(new Block(1,date.now(), { amount: 4 }));
 
 console.log('Mining block 2...');
 savjeeCoin.addBlock(new Block(2, "01/07/2023", { amount: 10 }));
