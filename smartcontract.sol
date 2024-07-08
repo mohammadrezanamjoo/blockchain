@@ -25,7 +25,7 @@ contract SupplyChain {
     }
 
     modifier productExists(uint _productId) {
-        require(_productId <= productCount, "Product does not exist");
+        require(_productId <= productCount,  "Product does not exist");
         _;
     }
 
