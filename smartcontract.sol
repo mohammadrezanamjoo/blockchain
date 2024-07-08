@@ -8,7 +8,7 @@ contract SupplyChain {
     enum ProductStatus { Created, Shipped, Received }
 
     struct Product {
-        uint id;
+        uint id ;
         string name;
         ProductStatus status;
     }
