@@ -19,7 +19,7 @@ contract SupplyChain {
     event ProductShipped(uint id, ProductStatus status);
     event ProductReceived(uint id, ProductStatus status);
 
-    modifier onlyOwner() {
+    modifier onlyOwner()  {
         require(msg.sender == owner, "Only the contract owner can call this function");
         _;
     }
