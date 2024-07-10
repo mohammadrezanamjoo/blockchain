@@ -23,7 +23,7 @@ contract BitmapVerifier {
         return _imageHash == originalImageHash;
     }
 
-    // Utility function to compute hash of the image
+    // Utility function to compute hash 
     function computeImageHash(bytes memory image) public pure returns (bytes32) {
         return keccak256(image);
     }
