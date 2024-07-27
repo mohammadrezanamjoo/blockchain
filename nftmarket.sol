@@ -14,6 +14,7 @@ contract NFTMarketplace is ERC721, Ownable {
     enum ListingStatus { Open, Sold }
 
     struct NFTListing {
+
         uint256 tokenId;
         address seller;
         uint256 price;
