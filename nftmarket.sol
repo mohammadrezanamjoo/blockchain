@@ -60,6 +60,7 @@ contract NFTMarketplace is ERC721, Ownable {
     }
 
     function setListingPrice(uint256 _price) external onlyOwner {
+
         listingPrice = _price;
     }
 }
