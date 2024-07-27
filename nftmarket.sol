@@ -25,7 +25,7 @@ contract NFTMarketplace is ERC721, Ownable {
     event NFTListed(uint256 indexed tokenId, address indexed seller, uint256 price);
     event NFTSold(uint256 indexed tokenId, address indexed buyer, uint256 price);
 
-    constructor() ERC721("NFTMarketplace", "NFTM") {
+    constructor() ERC721("NFTMarketplace",  "NFTM") {
         tokenIdCounter = 1;
     }
 
