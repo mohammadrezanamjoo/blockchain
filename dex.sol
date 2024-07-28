@@ -42,7 +42,6 @@ contract DecentralizedExchange {
         tokenBalances[msg.sender][_token] += _amount;
         tokenBalances[_seller][_token] -= _amount;
 
-        // Emit trade event
         emit TradeExecuted(msg.sender, _seller, _amount, _token);
     }
 }
