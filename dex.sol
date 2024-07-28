@@ -30,9 +30,11 @@ contract DecentralizedExchange {
     }
 
     function withdrawToken(address _token, uint256 _amount) external {
+
         require(tokenBalances[msg.sender][_token] >= _amount, "Insufficient balance");
         require(IERC20(_token).transfer(msg.sender, _amount), "Failed to transfer tokens");
         tokenBalances[msg.sender][_token] -= _amount;
+
     }
 
     function executeTrade(address ,  _token, address _seller, uint256 _amount) external {
