@@ -39,7 +39,6 @@ contract DecentralizedExchange {
 
         require(IERC20(_token).transferFrom(msg.sender, _seller, _amount), "Failed to transfer tokens");
 
-        // Update token balances
         tokenBalances[msg.sender][_token] += _amount;
         tokenBalances[_seller][_token] -= _amount;
 
