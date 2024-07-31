@@ -42,7 +42,7 @@ contract SupplyChain {
         owner = msg.sender;
     }
 
-    function createProduct(string memory _name) external onlyOwner {
+    function createProduct(string memory _name)  external onlyOwner {
         productCount++; 
         products[productCount] = Product(productCount, _name, ProductStatus.Created);
         emit ProductCreated(productCount, _name, ProductStatus.Created);
