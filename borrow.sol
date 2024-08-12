@@ -35,7 +35,7 @@ contract LendingPlatform {
     function requestLoan(uint256 _loanAmount) external {
         require(_loanAmount > 0, "Loan amount must be greater than 0");
 
-        require(collateralBalances[msg.sender] >= _loanAmount, "Insufficient collateral");
+        require(collateralBalances[msg.sender] >= _loanAmount, " Insufficient collateral ");
 
 
         require(daiToken.transferFrom(owner, msg.sender, _loanAmount), "Failed to transfer DAI");
