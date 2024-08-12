@@ -45,7 +45,7 @@ contract LendingPlatform {
         emit LoanGranted(msg.sender, _loanAmount);
     }
 
-    function repayLoan(uint256 _repaymentAmount) external {
+    function repayLoan (uint256 _repaymentAmount) external {
         require(_repaymentAmount > 0, "Repayment amount must be greater than 0");
         
         require(daiToken.transferFrom(msg.sender, owner, _repaymentAmount), "Failed to repay loan");
