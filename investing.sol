@@ -12,6 +12,7 @@ contract InvestmentPlatform {
     mapping(address => Investor) public investors;
 
     event InvestmentMade(address indexed investor, uint256 amount);
+
     event Withdrawal(address indexed investor, uint256 amount);
 
     constructor(uint256 _minimumInvestment) {
