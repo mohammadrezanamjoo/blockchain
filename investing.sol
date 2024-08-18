@@ -1,6 +1,7 @@
 pragma solidity ^0.8.0;
 
 contract InvestmentPlatform {
+
     address public owner;
     uint256 public minimumInvestment;
     
