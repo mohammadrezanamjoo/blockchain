@@ -5,6 +5,7 @@ contract InvestmentPlatform {
     uint256 public minimumInvestment;
     
     struct Investor {
+
         uint256 amountInvested;
         uint256 investmentTime;
     }
