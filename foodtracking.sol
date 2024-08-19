@@ -10,7 +10,6 @@ contract FoodSupplyChain {
         string status;
     }
 
-    // Product ID to Product mapping
     mapping(uint256 => Product) public products;
 
     // Product ID to Product history mapping
