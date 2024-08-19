@@ -29,7 +29,6 @@ contract FoodSupplyChain {
         emit ProductCreated(productCounter, _name, _origin, msg.sender);
     }
 
-    // Function to transfer ownership of a product
     function transferProduct(uint256 _productId, address _newOwner) public {
         require(products[_productId].currentOwner == msg.sender, "You do not own this product.");
         products[_productId].currentOwner = _newOwner;
