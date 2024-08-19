@@ -46,7 +46,6 @@ contract FoodSupplyChain {
         emit ProductStatusUpdated(_productId, _status);
     }
 
-    // Function to get the product history
     function getProductHistory(uint256 _productId) public view returns (Product[] memory) {
         return productHistory[_productId];
     }
