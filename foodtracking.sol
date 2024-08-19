@@ -12,7 +12,6 @@ contract FoodSupplyChain {
 
     mapping(uint256 => Product) public products;
 
-    // Product ID to Product history mapping
     mapping(uint256 => Product[]) public productHistory;
 
     // Unique product ID counter
