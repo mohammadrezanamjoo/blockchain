@@ -12,6 +12,7 @@ contract BitmapVerifier {
     }
 
     modifier onlyOwner() {
+
         require(msg.sender == owner, "Only the owner can perform this action");
         _;
     }
