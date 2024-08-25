@@ -1,6 +1,7 @@
 pragma solidity ^0.8.0;
 
 contract BitmapVerifier {
+
     bytes32 public originalImageHash;
     address public owner;
 
