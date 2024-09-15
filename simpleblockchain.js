@@ -63,6 +63,7 @@ const { SHA256 } = require('crypto-js');
 global.CryptoJS = require('crypto-js');
 
 let savjeeCoin = new Blockchain();
+
 console.log('Mining block 1...');
 savjeeCoin.addBlock(new Block(1,date.now(), { amount: 4 }));
 
