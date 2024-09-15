@@ -71,4 +71,5 @@ console.log('Mining block 2...');
 savjeeCoin.addBlock(new Block(2, date.now() , { amount: 10 }));
 
 console.log(JSON.stringify(savjeeCoin, null, 4));
+
 console.log('Blockchain valid? ' + savjeeCoin.isChainValid());
