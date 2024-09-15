@@ -59,6 +59,7 @@ class Blockchain {
 }
 
 const { SHA256 } = require('crypto-js');
+
 global.CryptoJS = require('crypto-js');
 
 let savjeeCoin = new Blockchain();
