@@ -15,7 +15,6 @@ contract ReviewSystem {
     // Mapping to track if a user has already reviewed a product
     mapping(address => mapping(uint256 => bool)) public hasReviewed;
 
-    // Event to emit when a new review is added
     event NewReview(
         uint256 indexed productId,
         address indexed reviewer,
