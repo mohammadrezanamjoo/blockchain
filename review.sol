@@ -2,7 +2,6 @@ pragma solidity ^0.8.0;
 
 contract ReviewSystem {
 
-    // Struct to store a review
     struct Review {
         address reviewer;
         uint8 rating; // Rating out of 5
