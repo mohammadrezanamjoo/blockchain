@@ -9,7 +9,6 @@ contract ReviewSystem {
         uint256 timestamp;
     }
 
-    // Mapping of product IDs to an array of reviews
     mapping(uint256 => Review[]) public productReviews;
 
     // Mapping to track if a user has already reviewed a product
