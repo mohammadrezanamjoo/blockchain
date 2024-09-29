@@ -11,7 +11,6 @@ contract ReviewSystem {
 
     mapping(uint256 => Review[]) public productReviews;
 
-    // Mapping to track if a user has already reviewed a product
     mapping(address => mapping(uint256 => bool)) public hasReviewed;
 
     event NewReview(
