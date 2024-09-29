@@ -68,7 +68,6 @@ contract ReviewSystem {
         return (review.reviewer, review.rating, review.comment, review.timestamp);
     }
 
-    // Function to get the average rating for a product
     function getAverageRating(uint256 _productId) external view returns (uint8) {
         uint256 totalRating = 0;
         uint256 reviewCount = productReviews[_productId].length;
