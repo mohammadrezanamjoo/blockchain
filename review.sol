@@ -57,7 +57,6 @@ contract ReviewSystem {
         return productReviews[_productId].length;
     }
 
-    // Function to retrieve a specific review for a product
     function getReview(uint256 _productId, uint256 _index)
         external
         view
