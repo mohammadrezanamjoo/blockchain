@@ -29,6 +29,7 @@ contract ReviewSystem {
 
     // Function to submit a review
     function submitReview(uint256 _productId, uint8 _rating, string calldata _comment)
+
         external
         validRating(_rating)
     {
