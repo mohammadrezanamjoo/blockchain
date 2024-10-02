@@ -64,6 +64,7 @@ contract ReviewSystem {
         returns (address reviewer, uint8 rating, string memory comment, uint256 timestamp)
     {
         require(_index < productReviews[_productId].length, "Review does not exist");
+
         Review memory review = productReviews[_productId][_index];
         return (review.reviewer, review.rating, review.comment, review.timestamp);
     }
