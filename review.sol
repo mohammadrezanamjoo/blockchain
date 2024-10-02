@@ -72,6 +72,7 @@ contract ReviewSystem {
         uint256 reviewCount = productReviews[_productId].length;
 
         for (uint256 i = 0; i < reviewCount; i++) {
+
             totalRating += productReviews[_productId][i].rating;
         }
 
