@@ -51,6 +51,7 @@ contract InvestmentPlatform {
     }
 
     function getInvestorDetails() external view returns (uint256 amountInvested, uint256 investmentTime) {
+
         Investor storage investor = investors[msg.sender];
 
         return (investor.amountInvested, investor.investmentTime);
