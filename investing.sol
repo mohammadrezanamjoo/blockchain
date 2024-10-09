@@ -8,6 +8,7 @@ contract InvestmentPlatform {
     struct Investor {
 
         uint256 amountInvested;
+
         uint256 investmentTime;
     }
     
