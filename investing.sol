@@ -58,6 +58,7 @@ contract InvestmentPlatform {
     }
 
     function setMinimumInvestment(uint256 _minimumInvestment) external onlyOwner {
+
         minimumInvestment = _minimumInvestment;
     }
 
