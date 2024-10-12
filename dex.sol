@@ -28,6 +28,7 @@ contract DecentralizedExchange {
     }
 
     function depositToken(address _token, uint256 _amount) external {
+
         require(IERC20(_token).transferFrom(msg.sender, address(this), _amount), "Failed to transfer tokens");
         tokenBalances[msg.sender][_token] += _amount;
     }
