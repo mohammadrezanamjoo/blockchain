@@ -47,6 +47,7 @@ contract FoodSupplyChain {
         products[_productId].timestamp = block.timestamp;
         productHistory[_productId].push(products[_productId]);
         emit ProductStatusUpdated(_productId, _status);
+
     }
 
     function getProductHistory(uint256 _productId) public view returns (Product[] memory) {
