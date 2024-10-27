@@ -41,6 +41,7 @@ contract FoodSupplyChain {
     }
 
     function updateProductStatus(uint256 _productId, string memory _status) public {
+
         require(products[_productId].currentOwner == msg.sender, "You do not own this product.");
         products[_productId].status = _status;
         products[_productId].timestamp = block.timestamp;
