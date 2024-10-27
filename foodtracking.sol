@@ -30,6 +30,7 @@ contract FoodSupplyChain {
     }
 
     function transferProduct(uint256 _productId, address _newOwner) public {
+
         require(products[_productId].currentOwner == msg.sender, "You do not own this product.");
         products[_productId].currentOwner = _newOwner;
         products[_productId].timestamp = block.timestamp;
