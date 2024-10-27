@@ -37,6 +37,7 @@ contract FoodSupplyChain {
         products[_productId].status = "Transferred";
         productHistory[_productId].push(products[_productId]);
         emit ProductTransferred(_productId, msg.sender, _newOwner);
+
     }
 
     function updateProductStatus(uint256 _productId, string memory _status) public {
