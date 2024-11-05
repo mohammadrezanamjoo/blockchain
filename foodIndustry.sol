@@ -10,6 +10,7 @@ contract FoodProductTracker {
         uint256 productionDate;
         string currentLocation;
         string status;
+
     }
 
     mapping(uint256 => Product) public products;
