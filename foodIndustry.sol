@@ -1,6 +1,7 @@
 pragma solidity ^0.8.0;
 
 contract FoodProductTracker {
+
     struct Product {
         uint256 id;
         string name;
