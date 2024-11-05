@@ -7,6 +7,7 @@ contract FoodProductTracker {
         uint256 id;
 
         string name;
+
         string origin;
         uint256 productionDate;
         string currentLocation;
