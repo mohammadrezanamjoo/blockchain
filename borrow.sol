@@ -18,7 +18,7 @@ contract LendingPlatform {
     mapping(address => uint256) public collateralBalances;
 
     event CollateralDeposited (address indexed borrower, uint256 amount);
-    event LoanGranted(address indexed borrower, uint256 loanAmount);
+    event  LoanGranted(address indexed borrower, uint256 loanAmount);
     
     modifier onlyOwner() {
         require(msg.sender == owner, "Only the contract owner can call this function");
