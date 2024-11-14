@@ -41,7 +41,7 @@ contract LendingPlatform {
         require(collateralBalances[msg.sender] >= _loanAmount, " Insufficient collateral ");
 
 
-        require(daiToken.transferFrom(owner, msg.sender, _loanAmount), " Failed to transfer DAI");
+        require(daiToken.transferFrom(owner, msg.sender, _loanAmount),  " Failed to transfer DAI");
 
         collateralBalances[msg.sender] -= _loanAmount;
 
