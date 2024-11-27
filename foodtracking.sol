@@ -20,6 +20,7 @@ contract FoodSupplyChain {
     event ProductCreated(uint256 indexed productId, string name, string origin, address owner);
 
     event ProductTransferred(uint256 indexed productId, address indexed from, address indexed to);
+
     event ProductStatusUpdated(uint256 indexed productId, string status);
 
     // Function to create a new product in the supply chain
