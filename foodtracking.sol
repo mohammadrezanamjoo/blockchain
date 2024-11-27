@@ -35,6 +35,7 @@ contract FoodSupplyChain {
 
         require(products[_productId].currentOwner == msg.sender, "You do not own this product.");
         products[_productId].currentOwner = _newOwner;
+
         products[_productId].timestamp = block.timestamp;
         products[_productId].status = "Transferred";
         productHistory[_productId].push(products[_productId]);
