@@ -39,6 +39,7 @@ contract FoodSupplyChain {
         products[_productId].timestamp = block.timestamp;
         products[_productId].status = "Transferred";
         productHistory[_productId].push(products[_productId]);
+
         emit ProductTransferred(_productId, msg.sender, _newOwner);
 
     }
