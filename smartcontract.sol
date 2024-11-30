@@ -12,6 +12,7 @@ contract SupplyChain {
         uint id ;
 
         string name;
+
         ProductStatus status;
     }
 
