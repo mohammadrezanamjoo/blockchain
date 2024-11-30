@@ -10,6 +10,7 @@ contract SupplyChain {
 
     struct Product {
         uint id ;
+
         string name;
         ProductStatus status;
     }
