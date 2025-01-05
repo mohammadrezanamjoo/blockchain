@@ -7,6 +7,7 @@ contract IdentityManagement {
         string username;
         address owner;
         bool isVerified;
+
     }
 
     mapping(address => Identity) public identities;
