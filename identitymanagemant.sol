@@ -2,6 +2,7 @@
 pragma solidity ^0.8.0;
 
 contract IdentityManagement {
+
     struct Identity {
         string username;
         address owner;
