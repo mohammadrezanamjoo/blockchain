@@ -18,6 +18,7 @@ contract BitmapVerifier {
     }
 
     function setOriginalImageHash(bytes32 _originalImageHash) public onlyOwner {
+
         originalImageHash = _originalImageHash;
     }
 
