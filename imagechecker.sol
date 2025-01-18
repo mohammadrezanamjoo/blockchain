@@ -8,6 +8,7 @@ contract BitmapVerifier {
     constructor(bytes32 _originalImageHash) {
 
         originalImageHash = _originalImageHash;
+
         owner = msg.sender;
     }
 
