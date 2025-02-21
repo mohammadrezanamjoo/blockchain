@@ -10,6 +10,7 @@ contract FoodAuthenticity {
     }
 
     mapping(string => FoodProduct) public products;
+
     mapping(address => bool) public authorizedProducers;
     address public owner;
 
