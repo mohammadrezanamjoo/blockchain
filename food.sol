@@ -42,6 +42,7 @@ contract FoodAuthenticity {
         string memory _manufacturer,
         uint256 _productionDate
     ) public onlyAuthorizedProducer {
+
         require(products[_productId].productionDate == 0, "Product ID already exists");
         
         products[_productId] = FoodProduct(_name, _origin, _manufacturer, _productionDate, true);
