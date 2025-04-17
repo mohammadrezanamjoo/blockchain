@@ -4,7 +4,7 @@ contract ReviewSystem {
 
     struct Review {
         address reviewer;
-        uint8 rating; // Rating
+        uint8 rating;
         string comment;
         uint256 timestamp;
     }
