@@ -11,7 +11,6 @@ contract DecentralizedExchange {
 
     address public owner;
     mapping(address => mapping(address => uint256)) public tokenBalances;
-
     event TradeExecuted(address indexed buyer, address indexed seller, uint256 amount, address indexed token);
 
     modifier onlyOwner() {
