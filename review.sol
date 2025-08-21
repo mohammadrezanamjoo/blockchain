@@ -11,7 +11,7 @@ contract ReviewSystem {
 
     mapping(uint256 => Review[]) public productReviews;
 
-    mapping(address => mapping(uint256 => bool)) public hasReviewed;
+    mapping (address => mapping(uint256 => bool)) public hasReviewed;
 
     event NewReview(
         uint256 indexed productId,
