@@ -43,7 +43,7 @@ contract ReviewSystem {
             timestamp: block.timestamp
         });
 
-        // Add the review to the product's review array
+         // Add the review to the product's review array
         productReviews[_productId].push(newReview);
 
         // Mark that this user has reviewed the product
