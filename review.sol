@@ -49,7 +49,7 @@ contract ReviewSystem {
         // Mark that this user has reviewed the product
         hasReviewed[msg.sender][_productId] = true;
 
-        // Emit the event for the new review
+         // Emit the event for the new review
         emit NewReview(_productId, msg.sender, _rating, _comment, block.timestamp);
     }
 
