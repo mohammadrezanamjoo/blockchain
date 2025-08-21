@@ -35,7 +35,7 @@ contract ReviewSystem {
     {
         require(!hasReviewed[msg.sender][_productId], "You have already reviewed this product");
 
-        // Create the review
+         // Create the review
         Review memory newReview = Review({
             reviewer: msg.sender,
             rating: _rating,
