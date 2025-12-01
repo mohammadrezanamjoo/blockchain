@@ -49,7 +49,6 @@ contract NFTMarketplace is ERC721, Ownable {
     function buyNFT(uint256 _tokenId) external payable {
 
         NFTListing storage listing = listings[_tokenId];
-
         require(listing.status == ListingStatus.Open, "NFT not available for purchase");
 
         require(msg.value == listing.price, "Incorrect payment amount");
