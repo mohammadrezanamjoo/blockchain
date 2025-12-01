@@ -53,7 +53,6 @@ contract NFTMarketplace is ERC721, Ownable {
         require(msg.value == listing.price, "Incorrect payment amount");
         _transfer(listing.seller, msg.sender, _tokenId);
         listing.status = ListingStatus.Sold;
-
         payable(listing.seller).transfer(msg.value);
 
         emit NFTSold(_tokenId, msg.sender, msg.value);
