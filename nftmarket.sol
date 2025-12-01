@@ -54,7 +54,6 @@ contract NFTMarketplace is ERC721, Ownable {
         _transfer(listing.seller, msg.sender, _tokenId);
         listing.status = ListingStatus.Sold;
         payable(listing.seller).transfer(msg.value);
-
         emit NFTSold(_tokenId, msg.sender, msg.value);
     }
 
