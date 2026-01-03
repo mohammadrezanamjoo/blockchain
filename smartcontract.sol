@@ -20,12 +20,10 @@ contract SupplyChain {
         require(msg.sender == owner, "Only the contract owner can call this function");
         _;
     }
-
     modifier productExists(uint _productId) {
         require(_productId <= productCount,  "Product does not exist");
         _;
     }
-
     modifier productNotShipped(uint _productId) {
         require(products[_productId].status != ProductStatus.Shipped, "Product already shipped");
         _;
