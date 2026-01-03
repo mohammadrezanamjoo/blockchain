@@ -9,9 +9,7 @@ contract SupplyChain {
         string name;
         ProductStatus status;
     }
-
     mapping(uint => Product) public products;
-
     event ProductCreated(uint id, string name, ProductStatus status);
     event ProductShipped(uint id, ProductStatus status);
     event ProductReceived(uint id, ProductStatus status);
