@@ -1,13 +1,9 @@
 pragma solidity ^0.8.0;
 
 contract SupplyChain {
-
     address public owner;
-
     uint public productCount = 0;
-
     enum ProductStatus { Created, Shipped, Received }
-
     struct Product {
         uint id ;
 
